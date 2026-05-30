@@ -1,6 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our RIA Platform — MK-Wealth</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Open Sans', sans-serif; color: #222; background: #fff; }
+    .gold-rule { display: block; width: 80px; height: 3px; background: #E7CA63; margin: 14px auto 36px; }
+    .section-intro { max-width: 860px; margin: 0 auto; padding: 60px 30px 50px; }
+    .section-intro h1 { font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 400; color: #111; text-align: center; margin-bottom: 14px; }
+    .section-intro p { font-size: 15px; line-height: 1.85; color: #333; margin-bottom: 22px; }
+    .section-intro p strong { font-weight: 700; }
+    .section-rankings { padding: 60px 30px; background: #fff; }
+    .section-rankings-inner { max-width: 860px; margin: 0 auto; }
+    .section-rankings h2 { font-family: 'Playfair Display', serif; font-size: 30px; font-weight: 400; color: #111; text-align: center; margin-bottom: 6px; }
+    .section-rankings .sub { text-align: center; font-size: 14px; color: #666; margin-bottom: 36px; }
+    .rankings-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .ranking-card { background: #1e488f; color: #fff; padding: 28px 20px; text-align: center; cursor: pointer; transition: background 0.2s; text-decoration: none; display: block; }
+    .ranking-card:hover { background: #163972; }
+    .ranking-card .pub { font-size: 18px; font-weight: 600; letter-spacing: 0.03em; margin-bottom: 10px; display: block; }
+    .ranking-card .award { font-size: 15px; font-weight: 400; line-height: 1.5; display: block; }
+    .disclaimer { max-width: 860px; margin: 0 auto; padding: 20px 30px 40px; }
+    .disclaimer p { font-size: 12px; color: #666; line-height: 1.7; font-style: italic; }
+    .disclaimer a { color: #1a5fa8; text-decoration: none; }
+    .disclaimer a:hover { text-decoration: underline; }
+    .section-custody { max-width: 860px; margin: 0 auto; padding: 50px 30px 70px; }
+    .section-custody h2 { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 400; color: #111; text-align: center; margin-bottom: 14px; }
+    .section-custody p { font-size: 15px; line-height: 1.85; color: #333; margin-bottom: 20px; }
+    @media (max-width: 640px) { .rankings-grid { grid-template-columns: 1fr; } .section-intro h1 { font-size: 26px; } }
+  </style>
+</head>
+<body>
+
+  <section class="section-intro">
+    <h1>Our RIA Platform: Wealthcare Capital Management</h1>
+    <span class="gold-rule"></span>
+    <p>We, the partners of MK-Wealth, have worked for 25 years providing investment and planning services. We have engaged Wealthcare Capital Management to provide RIA services including compliance oversight, custodial relationship management, operations services, trading, investment management, and financial planning technology.</p>
+    <p><strong>What makes Wealthcare Unique?</strong> Their breakthrough patented financial planning platform, GDX360&reg;, has been utilized by many of the country&rsquo;s largest financial institutions because of its value in helping people achieve their lifetime goals. Since then, they&rsquo;ve developed a patented advising approach to increase investor confidence and comfort. From an investment perspective, portfolio seeks to maximize compensation for bearing risk combined with an acute focus on reducing investment fees and taxes.</p>
+    <p><strong>What makes an RIA different from other ways to receive advice?</strong> Registered Investment Advisors are held to a fiduciary standard of care. By law, they must ensure that each investment recommendation they make is based on your best interest. In the event that a conflict of interest should arise, RIAs are required to let you know. Additionally, they are required to have a written code of ethics that governs their actions and fully disclose how they are compensated. We conduct ourselves as fiduciaries and always place client interests first.</p>
+  </section>
+
+  <section class="section-rankings">
+    <div class="section-rankings-inner">
+      <h2>Wealthcare : Recent Rankings &amp; Accolades</h2>
+      <p class="sub">Click each accomplishment to learn more:</p>
+      <div class="rankings-grid">
+        <a class="ranking-card" href="https://www.barrons.com/report/top-financial-advisors/ria/2023" target="_blank" rel="noopener">
+          <span class="pub">Barron&rsquo;s 2020, 2021, 2022 &amp; 2023</span>
+          <span class="award">Top 100 RIA Firms*</span>
+        </a>
+        <a class="ranking-card" href="https://www.forbes.com/lists/top-ria-firms/" target="_blank" rel="noopener">
+          <span class="pub">Forbes</span>
+          <span class="award">2023 AMERICAS TOP RIA FIRMS*</span>
+        </a>
+        <a class="ranking-card" href="https://advisorhub.com/100-rias-to-watch-2023/" target="_blank" rel="noopener">
+          <span class="pub">AdvisorHub</span>
+          <span class="award">100 RIAs to Watch 2023</span>
+        </a>
+        <a class="ranking-card" href="https://www.fa-mag.com/news/fa-magazine-ria-survey---ranking-2023.html" target="_blank" rel="noopener">
+          <span class="pub">FA Magazine</span>
+          <span class="award">FA Magazine RIA Survey &amp; Ranking 2023</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="disclaimer">
+    <p>Third-party rankings and recognition from rating services or publications are no guarantee of future investment success. Working with a highly rated advisor does not ensure that a client or prospective client will experience a higher level of performance or results. These ratings should not be construed as an endorsement of the advisor or by any client, nor are they representative of any one client&rsquo;s evaluation. No fees were paid for consideration for inclusion in rankings, ratings, and recognitions, and generally, assessments are based on information prepared and submitted by the advisor. For ranking criteria, for Barron&rsquo;s see: <a href="https://www.barrons.com/report/top-financial-advisors/ria/2023" target="_blank" rel="noopener">Barron&rsquo;s RIA Firms 2023 Top 100</a> and for Forbes <a href="https://www.forbes.com/lists/top-ria-firms/" target="_blank" rel="noopener">Forbes America&rsquo;s Top RIA Firms</a></p>
+  </div>
+
+  <section class="section-custody">
+    <h2>Custody &amp; Care of Your Assets</h2>
+    <span class="gold-rule"></span>
+    <p>We do not hold or take custody of client assets. Your assets are held at your choice of custodian. Our preferred custodians for our clients are Charles Schwab or Fidelity, due to their commitment to quality service.</p>
+    <p>Both Wealthcare Capital Management and MK-Wealth are fully independent, ensuring that we are unbiased and objective in delivering advice to you. We are not compensated in any way by our custodians. Our only interest is your interest.</p>
+  </section>
+
+  <script src="header-footer.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>About RIA | MK-Wealth</title>
