@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Life Planning – MK-Wealth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="Financial%20Life%20Planning%20%E2%80%93%20MK-Wealth_files/css2.css" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      color: #000;
+      background: #fff;
+    }
+
+    /* ── SHARED LAYOUT ── */
+    .section-inner {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 0 30px;
+    }
+
+    /* ── SECTION HEADINGS ── */
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      font-weight: 400;
+      color: #111;
+      text-align: center;
+      margin-bottom: 14px;
+    }
+
+    .gold-rule {
+      width: 80px;
+      height: 3px;
+      background: #c9a84c;
+      display: block;
+      margin: 0 auto 48px;
+    }
+
+    /* ── INTRO SECTION ── */
+    .intro-section {
+      padding: 60px 30px 50px;
+      max-width: 1170px;
+      margin: 0 auto;
+    }
+
+    .intro-section p {
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    /* ── COMMON QUESTIONS ── */
+    .questions-section {
+      padding: 20px 30px 60px;
+      max-width: 1170px;
+      margin: 0 auto;
+    }
+
+    .questions-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .questions-grid img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .questions-grid ul {
+      list-style: disc;
+      padding-left: 22px;
+    }
+
+    .questions-grid ul li {
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 10px;
+      color: #000;
+    }
+
+    /* ── FRAMEWORK SECTION ── */
+    .framework-section {
+      padding: 60px 30px;
+      max-width: 1170px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .framework-section img {
+      max-width: 800px;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* ── COMFORT ZONE SECTION ── */
+    .comfort-section {
+      padding: 60px 30px;
+      max-width: 1170px;
+      margin: 0 auto;
+    }
+
+    .comfort-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: start;
+    }
+
+    .comfort-grid .comfort-text p {
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 20px;
+    }
+
+    .comfort-grid .comfort-text ul {
+      list-style: disc;
+      padding-left: 22px;
+    }
+
+    .comfort-grid .comfort-text ul li {
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 8px;
+    }
+
+    .comfort-video {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: #1a1a2e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      padding: 30px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .comfort-video .video-globe {
+      font-size: 48px;
+      margin-bottom: 12px;
+      color: #ccc;
+    }
+
+    .comfort-video .video-tagline {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #aaa;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .comfort-video .video-headline {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 22px;
+      font-weight: 300;
+      color: #fff;
+    }
+
+    .comfort-video .video-headline span {
+      color: #7ec8a0;
+      font-weight: 700;
+    }
+
+    .comfort-video .play-btn {
+      margin-top: 16px;
+      width: 44px;
+      height: 44px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .comfort-video .play-btn::after {
+      content: '';
+      border-left: 16px solid #fff;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      margin-left: 4px;
+    }
+
+    /* ── TAX STRATEGY SECTION ── */
+    .tax-section {
+      padding: 60px 30px;
+      max-width: 1170px;
+      margin: 0 auto;
+    }
+
+    .tax-tagline {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 400;
+      font-style: italic;
+      text-align: center;
+      color: #111;
+      margin-bottom: 24px;
+    }
+
+    .tax-intro {
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 40px;
+    }
+
+    .tax-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4px;
+    }
+
+    .tax-card {
+      background: #d8d5e0;
+      padding: 32px 28px 36px;
+    }
+
+    .tax-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 400;
+      color: #111;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .tax-card ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    .tax-card ul li {
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 8px;
+      color: #111;
+    }
+
+    /* ── DISCIPLINED PROCESS SECTION ── */
+    .process-section {
+      padding: 60px 30px;
+      max-width: 1170px;
+      margin: 0 auto;
+    }
+
+    .process-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .process-card {
+      text-align: center;
+    }
+
+    .process-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .process-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 400;
+      color: #111;
+      margin-bottom: 16px;
+    }
+
+    .process-card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .process-card ul li {
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 6px;
+      color: #111;
+    }
+
+    /* ── CTA BUTTON ── */
+    .cta-section {
+      text-align: center;
+      padding: 20px 30px 70px;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: #c9a84c;
+      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 16px 36px;
+      letter-spacing: 0.3px;
+    }
+
+    .cta-btn:hover {
+      background: #b8963e;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .questions-grid,
+      .comfort-grid,
+      .tax-cards,
+      .process-cards { grid-template-columns: 1fr; }
+      .tax-cards { gap: 12px; }
+    }
+
+    @media (max-width: 600px) {
+      .intro-section,
+      .questions-section,
+      .framework-section,
+      .comfort-section,
+      .tax-section,
+      .process-section { padding-left: 16px; padding-right: 16px; }
+      .section-title { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+<script src="Financial%20Life%20Planning%20%E2%80%93%20MK-Wealth_files/header-footer.js"></script>
+
+<!-- ── INTRO ── -->
+<section class="intro-section">
+  <h1 class="section-title">Financial Life Planning</h1>
+  <span class="gold-rule"></span>
+  <p>We begin by exploring your life vision and the range of 
+possibilities given your resources. We help you clarify and prioritize 
+your life goals and then align your saving/spending and investment 
+policies to not only achieve your current life vision but also to 
+position you to enhance it.</p>
+</section>
+
+<!-- ── COMMON QUESTIONS ── -->
+<section class="questions-section">
+  <h2 class="section-title">Common Questions We Can Help You Answer</h2>
+  <span class="gold-rule"></span>
+  <div class="questions-grid">
+    <img src="Financial%20Life%20Planning%20%E2%80%93%20MK-Wealth_files/sidebyside.jpg" alt="Financial advisor shaking hands with clients">
+    <ul>
+      <li>What is the right balance between saving for the future and living well today?</li>
+      <li>What if I die or become disabled?</li>
+      <li>What resources can we provide our children and still meet other life goals and needs?</li>
+      <li>Can I afford to buy a second home?</li>
+      <li>Can I afford to support my favorite cause?</li>
+      <li>Can we help with our parent's long-term care needs?</li>
+      <li>Can I retire and maintain my lifestyle?</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ── FRAMEWORK DIAGRAM ── -->
+<section class="framework-section">
+  <h2 class="section-title">A Wealth Management Framework for a Fulfilled Life</h2>
+  <span class="gold-rule"></span>
+  <img src="Financial%20Life%20Planning%20%E2%80%93%20MK-Wealth_files/faf72d06-71ac-4da9-be0e-60f4fac1bb38.png" alt="Wealth management framework diagram showing Goals &amp; Dreams, Savings/Spending, Fulfilled Life, Protection, and Investment Policy">
+</section>
+
+<!-- ── COMFORT ZONE ── -->
+<section class="comfort-section">
+  <h2 class="section-title">Our Patented Comfort Zone Process</h2>
+  <span class="gold-rule"></span>
+  <div class="comfort-grid">
+    <div class="comfort-text">
+      <p>Experience clarity, confidence, and control with our patented Comfort Zone process</p>
+      <ul>
+        <li>Your Comfort Zone plan evolves with your life.</li>
+        <li>Your Comfort Zone plan evolves with priorities.</li>
+        <li>Your Comfort Zone plan helps manage trade-offs.</li>
+        <li>Actively balance goals for today versus tomorrow.</li>
+        <li>Your Comfort Zone tracks your plan's evolution, adjusts for 
+life events, and delivers the results in understandable plain English.</li>
+      </ul>
+    </div>
+    <div class="comfort-video">
+      <div class="video-globe">🌐</div>
+      <div class="video-tagline">Where your investment advisor</div>
+      <div class="video-headline">PICTURE A <span>WORLD</span></div>
+      <div class="play-btn"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TAX STRATEGY ── -->
+<section class="tax-section">
+  <h2 class="section-title">Tax Strategy</h2>
+  <span class="gold-rule"></span>
+  <p class="tax-tagline">Pre-tax returns matter. After-tax returns matter more.</p>
+  <p class="tax-intro">Our tax strategies seek to minimize 
+investment-related taxes, lifetime income taxes, and estate taxes. In 
+doing so, we will work closely with your CPA and other trusted advisors.
+ Our goal is to keep more of what you earn.</p>
+  <div class="tax-cards">
+    <div class="tax-card">
+      <h3>Investment Taxes</h3>
+      <ul>
+        <li>Household-Based Tax Location</li>
+        <li>Municipal Bonds</li>
+        <li>Tax-Preferenced Investments</li>
+        <li>Tax Loss Harvesting</li>
+      </ul>
+    </div>
+    <div class="tax-card">
+      <h3>Lifetime Taxes</h3>
+      <ul>
+        <li>Tax Return Analysis &amp; Forecasting</li>
+        <li>Roth Conversion Strategies</li>
+        <li>Tax-Efficient Withdrawals</li>
+        <li>Social Security / IRMA</li>
+      </ul>
+    </div>
+    <div class="tax-card">
+      <h3>Estate Taxes</h3>
+      <ul>
+        <li>Trusts / Gifting</li>
+        <li>Insurance</li>
+        <li>Charitable Giving</li>
+        <li>Family Limited Partnerships</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ── DISCIPLINED PROCESS ── -->
+<section class="process-section">
+  <h2 class="section-title">A Disciplined Process for Wealth Mangement</h2>
+  <span class="gold-rule"></span>
+  <div class="process-cards">
+    <div class="process-card">
+      <img src="Financial%20Life%20Planning%20%E2%80%93%20MK-Wealth_files/services.jpg" alt="Initial Plan">
+      <h3>Initial Plan</h3>
+      <ul>
+        <li>Goals &amp; Dreams</li>
+        <li>Saving / Spending Policy</li>
+        <li>Investment Policy</li>
+        <li>Asset Protection Strategies</li>
+        <li>Special Considerations</li>
+      </ul>
+    </div>
+    <div class="process-card">
+      <img src="Financial%20Life%20Planning%20%E2%80%93%20MK-Wealth_files/independence.jpg" alt="On-going">
+      <h3>On-going</h3>
+      <ul>
+        <li>Comfort Zone Monitoring</li>
+        <li>Quarterly Status Update</li>
+        <li>Investment Oversight</li>
+        <li>Daily Re-balancing Check</li>
+        <li>Tax Loss Harvesting</li>
+      </ul>
+    </div>
+    <div class="process-card">
+      <img src="Financial%20Life%20Planning%20%E2%80%93%20MK-Wealth_files/values.jpg" alt="Annual">
+      <h3>Annual</h3>
+      <ul>
+        <li>Company Benefits Review</li>
+        <li>Insurance Needs</li>
+        <li>Estate Plan Review</li>
+        <li>RMDs</li>
+        <li>Roth Conversions</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section class="cta-section">
+  <a href="file:///C:/Users/kkideckel/Downloads/contactus.html" class="cta-btn">Talk to Us About Our Planning Services</a>
+</section>
+
+
+
+</body></html>
